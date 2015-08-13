@@ -1,0 +1,7 @@
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Release\WiimoteTest.exe.config
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Release\WiimoteTest.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Release\WiimoteTest.SingleWiimoteForm.resources
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Release\WiimoteTest.MultipleWiimoteForm.resources
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Release\WiimoteTest.Properties.Resources.resources
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Release\WiimoteTest.WiimoteInfo.resources
+C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Release\WiimoteTest.csproj.GenerateResource.Cache

@@ -17,12 +17,33 @@ namespace WiimoteTest
 
         public static UDPPacketIO udpManager;
         public static Osc oscManager;
+        public static string dstIP = "127.0.0.1";
+        public static int sendToPort = 13000;
+        public static int listenToPort = 13560;
 
 		[STAThread]
-		static void Main()
+        static void Main(string[] args)
 		{
+            for (int i = 0; i < args.Length && i < 3; i++)
+            {
+                if (i == 0)
+                {
+                    dstIP = args[i];
+                }
+                else if (i == 1)
+                {
+                    sendToPort = int.Parse(args[i]);
+                }
+                else if (i == 2)
+                {
+                    listenToPort = int.Parse(args[i]);
+                }
+            }
+
+            Console.WriteLine("current IP is " + dstIP + ",sendToPort:" + sendToPort + ",listenToPort:" + listenToPort);
+
             udpManager = new UDPPacketIO();
-            udpManager.init("127.0.0.1", 13000, 13560);
+            udpManager.init(dstIP, sendToPort, listenToPort);
             oscManager = new Osc();
             oscManager.init(udpManager);
 

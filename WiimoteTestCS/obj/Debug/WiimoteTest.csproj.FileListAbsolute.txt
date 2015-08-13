@@ -21,9 +21,6 @@ C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Debug\WiimoteTes
 C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Debug\Alchemy.dll
 C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Debug\WiimoteLib.pdb
-C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\bin\Debug\WiimoteLib.xml
-C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Debug\WiimoteTest.csprojResolveAssemblyReference.cache
 C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Debug\WiimoteTest.SingleWiimoteForm.resources
 C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Debug\WiimoteTest.MultipleWiimoteForm.resources
 C:\Users\Public\Documents\HeadTrackingProject\WiimoteTestCS\obj\Debug\WiimoteTest.Properties.Resources.resources

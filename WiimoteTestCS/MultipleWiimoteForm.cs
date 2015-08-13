@@ -57,6 +57,7 @@ namespace WiimoteTest
 				wm.WiimoteExtensionChanged += wm_WiimoteExtensionChanged;
                 
 				wm.Connect();
+                
 				if(wm.WiimoteState.ExtensionType != ExtensionType.BalanceBoard)
 					wm.SetReportType(InputReport.IRExtensionAccel, IRSensitivity.Maximum, true);
 				
