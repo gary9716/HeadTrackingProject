@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using WiimoteLib;
 using UnityEngine;
-
+using System.Collections;
 public class TestOscClient : MonoBehaviour {
 	
 	public int localPort;
@@ -10,9 +10,12 @@ public class TestOscClient : MonoBehaviour {
 	public UDPPacketIO udpManager;
 	public Osc oscManager;
 
-	public void oscMsgHandler(OscMessage oscMeg) {
-		Debug.Log (oscMeg.Address);
-		//Debug.Log ("addr:" + oscMeg.Address);
+	public void WiiMoteOscMsgHandler(OscMessage oscMeg) {
+		//Debug.Log (oscMeg.Address);
+		ArrayList values = oscMeg.Values;
+		for (int i = 0; i < values.Count; i++) {
+			Debug.Log (i + ":" + values[i].ToString());
+		}
 	}
 
 	// Use this for initialization
@@ -20,7 +23,7 @@ public class TestOscClient : MonoBehaviour {
 		udpManager.init ("127.0.0.1", remotePort, localPort);
 		oscManager.init (udpManager);
 
-		oscManager.SetAllMessageHandler (oscMsgHandler);
+		oscManager.SetAddressHandler ("/WiiMote", WiiMoteOscMsgHandler);
 
 	}
 

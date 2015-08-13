@@ -24,16 +24,20 @@ namespace WiimoteTest
 		private Bitmap b = new Bitmap(256, 192, PixelFormat.Format24bppRgb);
 		private Graphics g;
 		private Wiimote mWiimote;
+        private OscMessage oscMsg = new OscMessage();
+        private const string oscAddr = "/WiiMote";
 
 		public WiimoteInfo()
 		{
 			InitializeComponent();
 			g = Graphics.FromImage(b);
+            oscMsg.Address = oscAddr;
 		}
 
 		public WiimoteInfo(Wiimote wm) : this()
 		{
 			mWiimote = wm;
+            oscMsg.Address = oscAddr;
 		}
 
 		public void UpdateState(WiimoteChangedEventArgs args)
@@ -59,9 +63,7 @@ namespace WiimoteTest
 		private void UpdateWiimoteChanged(WiimoteChangedEventArgs args)
 		{
 			WiimoteState ws = args.WiimoteState;
-            OscMessage oscMsg = new OscMessage();
-            oscMsg.Address = "/" + mWiimote.ID;
-
+            
 			clbButtons.SetItemChecked(0, ws.ButtonState.A);
 			clbButtons.SetItemChecked(1, ws.ButtonState.B);
 			clbButtons.SetItemChecked(2, ws.ButtonState.Minus);
@@ -182,9 +184,10 @@ namespace WiimoteTest
 
             var irArray = ws.IRState.IRSensors;
             int numIRSensor = irArray.Length;
+            oscMsg.Values.Clear();
             for (int i = 0; i < numIRSensor;i++)
             {
-                oscMsg.Values.Add("ir:" + irArray[i].Found.GetHashCode() + ":" + irArray[i].Position.ToString());
+                oscMsg.Values.Add("ir:" + irArray[i].Found.GetHashCode() + ":" + irArray[i].Position.X + "," + irArray[i].Position.Y);
             }
 
 			UpdateIR(ws.IRState.IRSensors[0], lblIR1, lblIR1Raw, chkFound1, Color.Red);

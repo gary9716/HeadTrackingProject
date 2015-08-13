@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\HeadTracking.cs" />
      <Compile Include="Assets\Script\Osc.cs" />
      <Compile Include="Assets\Script\TestAccessWii.cs" />
      <Compile Include="Assets\Script\TestOscClient.cs" />
@@ -137,7 +138,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.6/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="WiimoteLib">
- <HintPath>C:/Users/mhci/Documents/TestWiiIRHeadTracking/Assets/Plugins/WiimoteLib.dll</HintPath>
+ <HintPath>C:/Users/Public/Documents/HeadTrackingProject/TestWiiIRHeadTracking/Assets/Plugins/WiimoteLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
