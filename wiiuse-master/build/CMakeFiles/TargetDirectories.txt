@@ -1,0 +1,2 @@
+/Users/lab430/Downloads/wiiuse-master/build/example/CMakeFiles/wiiuseexample.dir
+/Users/lab430/Downloads/wiiuse-master/build/src/CMakeFiles/wiiuse.dir
