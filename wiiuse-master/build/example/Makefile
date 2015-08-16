@@ -42,10 +42,10 @@ RM = /usr/local/Cellar/cmake/3.2.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lab430/Downloads/wiiuse-master
+CMAKE_SOURCE_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lab430/Downloads/wiiuse-master/build
+CMAKE_BINARY_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"development\" \"docs\" \"examples\" \"runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"development\" \"docs\" \"examples\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -104,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/lab430/Downloads/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/lab430/Downloads/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/lab430/Downloads/wiiuse-master/build/CPackSourceConfig.cmake
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +133,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles /Users/lab430/Downloads/wiiuse-master/build/example/CMakeFiles/progress.marks
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 0
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/example/CMakeFiles/progress.marks
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,56 +149,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-example/CMakeFiles/wiiuseexample.dir/rule:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/wiiuseexample.dir/rule
-.PHONY : example/CMakeFiles/wiiuseexample.dir/rule
+example/CMakeFiles/wiiuseServer.dir/rule:
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/wiiuseServer.dir/rule
+.PHONY : example/CMakeFiles/wiiuseServer.dir/rule
 
 # Convenience name for target.
-wiiuseexample: example/CMakeFiles/wiiuseexample.dir/rule
-.PHONY : wiiuseexample
+wiiuseServer: example/CMakeFiles/wiiuseServer.dir/rule
+.PHONY : wiiuseServer
 
 # fast build rule for target.
-wiiuseexample/fast:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/build
-.PHONY : wiiuseexample/fast
+wiiuseServer/fast:
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/build
+.PHONY : wiiuseServer/fast
 
-example.o: example.c.o
-.PHONY : example.o
+wiiServer.o: wiiServer.cpp.o
+.PHONY : wiiServer.o
 
 # target to build an object file
-example.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/example.c.o
-.PHONY : example.c.o
+wiiServer.cpp.o:
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/wiiServer.cpp.o
+.PHONY : wiiServer.cpp.o
 
-example.i: example.c.i
-.PHONY : example.i
+wiiServer.i: wiiServer.cpp.i
+.PHONY : wiiServer.i
 
 # target to preprocess a source file
-example.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/example.c.i
-.PHONY : example.c.i
+wiiServer.cpp.i:
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/wiiServer.cpp.i
+.PHONY : wiiServer.cpp.i
 
-example.s: example.c.s
-.PHONY : example.s
+wiiServer.s: wiiServer.cpp.s
+.PHONY : wiiServer.s
 
 # target to generate assembly for a file
-example.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/example.c.s
-.PHONY : example.c.s
+wiiServer.cpp.s:
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/wiiServer.cpp.s
+.PHONY : wiiServer.cpp.s
 
 # Help Target
 help:
@@ -210,14 +210,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... wiiuseexample"
+	@echo "... wiiuseServer"
 	@echo "... list_install_components"
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... install/local"
-	@echo "... example.o"
-	@echo "... example.i"
-	@echo "... example.s"
+	@echo "... wiiServer.o"
+	@echo "... wiiServer.i"
+	@echo "... wiiServer.s"
 .PHONY : help
 
 
@@ -229,6 +229,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

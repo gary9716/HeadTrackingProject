@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lab430/Downloads/wiiuse-master/example
+# Install script for directory: /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,14 +28,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "examples")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/lab430/Downloads/wiiuse-master/build/example/wiiuseexample")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseexample" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseexample")
-    execute_process(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/lab430/Downloads/wiiuse-master/build/src/libwiiuse.dylib" "libwiiuse.dylib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseexample")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/example/wiiuseServer")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseServer" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseServer")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseexample")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/wiiuseServer")
     endif()
   endif()
 endif()

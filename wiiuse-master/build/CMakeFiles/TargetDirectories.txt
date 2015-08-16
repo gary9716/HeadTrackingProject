@@ -1,2 +1,2 @@
-/Users/lab430/Downloads/wiiuse-master/build/example/CMakeFiles/wiiuseexample.dir
-/Users/lab430/Downloads/wiiuse-master/build/src/CMakeFiles/wiiuse.dir
+/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/example/CMakeFiles/wiiuseServer.dir
+/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/src/CMakeFiles/wiiuse.dir

@@ -24,11 +24,23 @@ limits.h
 wchar.h
 -
 
-/Users/lab430/Downloads/wiiuse-master/example/example.c
-stdio.h
+/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/example/wiiServer.cpp
+cstdio
+-
+cstdlib
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+string
+-
+vector
 -
 wiiuse.h
-/Users/lab430/Downloads/wiiuse-master/example/wiiuse.h
+/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/example/wiiuse.h
 unistd.h
 -
 

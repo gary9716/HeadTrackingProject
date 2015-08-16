@@ -1,8 +1,8 @@
 include_directories(../src)
-add_executable(wiiuseexample example.c)
-target_link_libraries(wiiuseexample wiiuse)
+add_executable(wiiuseServer wiiServer.cpp)
+target_link_libraries(wiiuseServer wiiuse)
 
 if(INSTALL_EXAMPLES)
-	install(TARGETS wiiuseexample
+	install(TARGETS wiiuseServer
 		RUNTIME DESTINATION bin COMPONENT examples)
 endif()

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lab430/Downloads/wiiuse-master
+# Install script for directory: /Users/lab430/Documents/HeadTrackingProject/wiiuse-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,24 +29,24 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "docs")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/wiiuse" TYPE FILE FILES
-    "/Users/lab430/Downloads/wiiuse-master/CHANGELOG.mkd"
-    "/Users/lab430/Downloads/wiiuse-master/LICENSE"
-    "/Users/lab430/Downloads/wiiuse-master/README.mkd"
+    "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/CHANGELOG.mkd"
+    "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/LICENSE"
+    "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/README.mkd"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "examples")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/wiiuse/example" TYPE FILE FILES "/Users/lab430/Downloads/wiiuse-master/example/example.c")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/wiiuse/example" TYPE FILE FILES "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/example/example.c")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "examples")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/wiiuse/example-sdl" TYPE FILE FILES "/Users/lab430/Downloads/wiiuse-master/example-sdl/sdl.c")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/wiiuse/example-sdl" TYPE FILE FILES "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/example-sdl/sdl.c")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/lab430/Downloads/wiiuse-master/build/src/cmake_install.cmake")
-  include("/Users/lab430/Downloads/wiiuse-master/build/example/cmake_install.cmake")
+  include("/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/src/cmake_install.cmake")
+  include("/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/example/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lab430/Downloads/wiiuse-master/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

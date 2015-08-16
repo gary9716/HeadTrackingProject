@@ -42,10 +42,10 @@ RM = /usr/local/Cellar/cmake/3.2.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lab430/Downloads/wiiuse-master
+CMAKE_SOURCE_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lab430/Downloads/wiiuse-master/build
+CMAKE_BINARY_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"development\" \"docs\" \"examples\" \"runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"development\" \"docs\" \"examples\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -114,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/lab430/Downloads/wiiuse-master/build/CPackSourceConfig.cmake
+	/usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,9 +133,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,17 +176,17 @@ wiiuse/fast:
 .PHONY : wiiuse/fast
 
 #=============================================================================
-# Target rules for targets named wiiuseexample
+# Target rules for targets named wiiuseServer
 
 # Build rule for target.
-wiiuseexample: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 wiiuseexample
-.PHONY : wiiuseexample
+wiiuseServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wiiuseServer
+.PHONY : wiiuseServer
 
 # fast build rule for target.
-wiiuseexample/fast:
-	$(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/build
-.PHONY : wiiuseexample/fast
+wiiuseServer/fast:
+	$(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/build
+.PHONY : wiiuseServer/fast
 
 # Help Target
 help:
@@ -203,7 +203,7 @@ help:
 	@echo "... package_source"
 	@echo "... install/local"
 	@echo "... wiiuse"
-	@echo "... wiiuseexample"
+	@echo "... wiiuseServer"
 .PHONY : help
 
 

@@ -64,5 +64,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/wiiuse.dir/DependInfo.cmake"
-  "example/CMakeFiles/wiiuseexample.dir/DependInfo.cmake"
+  "example/CMakeFiles/wiiuseServer.dir/DependInfo.cmake"
   )

@@ -14,7 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.o"
   "CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.o"
   "libwiiuse.pdb"
-  "libwiiuse.dylib"
+  "libwiiuse.a"
 )
 
 # Per-language clean rules from dependency scanning.

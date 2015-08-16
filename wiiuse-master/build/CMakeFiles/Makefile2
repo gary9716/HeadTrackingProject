@@ -47,10 +47,10 @@ RM = /usr/local/Cellar/cmake/3.2.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lab430/Downloads/wiiuse-master
+CMAKE_SOURCE_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lab430/Downloads/wiiuse-master/build
+CMAKE_BINARY_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -74,7 +74,7 @@ src/preinstall:
 src/CMakeFiles/wiiuse.dir/all:
 	$(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/depend
 	$(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14
 	@echo "Built target wiiuse"
 .PHONY : src/CMakeFiles/wiiuse.dir/all
 
@@ -84,9 +84,9 @@ all: src/CMakeFiles/wiiuse.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/wiiuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/wiiuse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/wiiuse.dir/rule
 
 # Convenience name for target.
@@ -106,11 +106,11 @@ clean: src/CMakeFiles/wiiuse.dir/clean
 # Directory level rules for directory example
 
 # Convenience name for "all" pass in the directory.
-example/all: example/CMakeFiles/wiiuseexample.dir/all
+example/all: example/CMakeFiles/wiiuseServer.dir/all
 .PHONY : example/all
 
 # Convenience name for "clean" pass in the directory.
-example/clean: example/CMakeFiles/wiiuseexample.dir/clean
+example/clean: example/CMakeFiles/wiiuseServer.dir/clean
 .PHONY : example/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -118,38 +118,38 @@ example/preinstall:
 .PHONY : example/preinstall
 
 #=============================================================================
-# Target rules for target example/CMakeFiles/wiiuseexample.dir
+# Target rules for target example/CMakeFiles/wiiuseServer.dir
 
 # All Build rule for target.
-example/CMakeFiles/wiiuseexample.dir/all: src/CMakeFiles/wiiuse.dir/all
-	$(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/depend
-	$(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles  15
-	@echo "Built target wiiuseexample"
-.PHONY : example/CMakeFiles/wiiuseexample.dir/all
+example/CMakeFiles/wiiuseServer.dir/all: src/CMakeFiles/wiiuse.dir/all
+	$(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/depend
+	$(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles  15
+	@echo "Built target wiiuseServer"
+.PHONY : example/CMakeFiles/wiiuseServer.dir/all
 
 # Include target in all.
-all: example/CMakeFiles/wiiuseexample.dir/all
+all: example/CMakeFiles/wiiuseServer.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-example/CMakeFiles/wiiuseexample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/wiiuseexample.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 0
-.PHONY : example/CMakeFiles/wiiuseexample.dir/rule
+example/CMakeFiles/wiiuseServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/wiiuseServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/wiiuseServer.dir/rule
 
 # Convenience name for target.
-wiiuseexample: example/CMakeFiles/wiiuseexample.dir/rule
-.PHONY : wiiuseexample
+wiiuseServer: example/CMakeFiles/wiiuseServer.dir/rule
+.PHONY : wiiuseServer
 
 # clean rule for target.
-example/CMakeFiles/wiiuseexample.dir/clean:
-	$(MAKE) -f example/CMakeFiles/wiiuseexample.dir/build.make example/CMakeFiles/wiiuseexample.dir/clean
-.PHONY : example/CMakeFiles/wiiuseexample.dir/clean
+example/CMakeFiles/wiiuseServer.dir/clean:
+	$(MAKE) -f example/CMakeFiles/wiiuseServer.dir/build.make example/CMakeFiles/wiiuseServer.dir/clean
+.PHONY : example/CMakeFiles/wiiuseServer.dir/clean
 
 # clean rule for target.
-clean: example/CMakeFiles/wiiuseexample.dir/clean
+clean: example/CMakeFiles/wiiuseServer.dir/clean
 .PHONY : clean
 
 #=============================================================================

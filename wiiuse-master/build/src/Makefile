@@ -42,10 +42,10 @@ RM = /usr/local/Cellar/cmake/3.2.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lab430/Downloads/wiiuse-master
+CMAKE_SOURCE_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lab430/Downloads/wiiuse-master/build
+CMAKE_BINARY_DIR = /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"development\" \"docs\" \"examples\" \"runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"development\" \"docs\" \"examples\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -104,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/lab430/Downloads/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/lab430/Downloads/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/lab430/Downloads/wiiuse-master/build/CPackSourceConfig.cmake
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && /usr/local/Cellar/cmake/3.2.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +133,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles /Users/lab430/Downloads/wiiuse-master/build/src/CMakeFiles/progress.marks
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Downloads/wiiuse-master/build/CMakeFiles 0
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/src/CMakeFiles/progress.marks
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +149,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/wiiuse.dir/rule:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/wiiuse.dir/rule
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/wiiuse.dir/rule
 .PHONY : src/CMakeFiles/wiiuse.dir/rule
 
 # Convenience name for target.
@@ -173,7 +173,7 @@ wiiuse: src/CMakeFiles/wiiuse.dir/rule
 
 # fast build rule for target.
 wiiuse/fast:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/build
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/build
 .PHONY : wiiuse/fast
 
 classic.o: classic.c.o
@@ -181,7 +181,7 @@ classic.o: classic.c.o
 
 # target to build an object file
 classic.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/classic.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/classic.c.o
 .PHONY : classic.c.o
 
 classic.i: classic.c.i
@@ -189,7 +189,7 @@ classic.i: classic.c.i
 
 # target to preprocess a source file
 classic.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/classic.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/classic.c.i
 .PHONY : classic.c.i
 
 classic.s: classic.c.s
@@ -197,7 +197,7 @@ classic.s: classic.c.s
 
 # target to generate assembly for a file
 classic.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/classic.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/classic.c.s
 .PHONY : classic.c.s
 
 dynamics.o: dynamics.c.o
@@ -205,7 +205,7 @@ dynamics.o: dynamics.c.o
 
 # target to build an object file
 dynamics.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/dynamics.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/dynamics.c.o
 .PHONY : dynamics.c.o
 
 dynamics.i: dynamics.c.i
@@ -213,7 +213,7 @@ dynamics.i: dynamics.c.i
 
 # target to preprocess a source file
 dynamics.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/dynamics.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/dynamics.c.i
 .PHONY : dynamics.c.i
 
 dynamics.s: dynamics.c.s
@@ -221,7 +221,7 @@ dynamics.s: dynamics.c.s
 
 # target to generate assembly for a file
 dynamics.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/dynamics.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/dynamics.c.s
 .PHONY : dynamics.c.s
 
 events.o: events.c.o
@@ -229,7 +229,7 @@ events.o: events.c.o
 
 # target to build an object file
 events.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/events.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/events.c.o
 .PHONY : events.c.o
 
 events.i: events.c.i
@@ -237,7 +237,7 @@ events.i: events.c.i
 
 # target to preprocess a source file
 events.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/events.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/events.c.i
 .PHONY : events.c.i
 
 events.s: events.c.s
@@ -245,7 +245,7 @@ events.s: events.c.s
 
 # target to generate assembly for a file
 events.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/events.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/events.c.s
 .PHONY : events.c.s
 
 guitar_hero_3.o: guitar_hero_3.c.o
@@ -253,7 +253,7 @@ guitar_hero_3.o: guitar_hero_3.c.o
 
 # target to build an object file
 guitar_hero_3.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/guitar_hero_3.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/guitar_hero_3.c.o
 .PHONY : guitar_hero_3.c.o
 
 guitar_hero_3.i: guitar_hero_3.c.i
@@ -261,7 +261,7 @@ guitar_hero_3.i: guitar_hero_3.c.i
 
 # target to preprocess a source file
 guitar_hero_3.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/guitar_hero_3.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/guitar_hero_3.c.i
 .PHONY : guitar_hero_3.c.i
 
 guitar_hero_3.s: guitar_hero_3.c.s
@@ -269,7 +269,7 @@ guitar_hero_3.s: guitar_hero_3.c.s
 
 # target to generate assembly for a file
 guitar_hero_3.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/guitar_hero_3.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/guitar_hero_3.c.s
 .PHONY : guitar_hero_3.c.s
 
 io.o: io.c.o
@@ -277,7 +277,7 @@ io.o: io.c.o
 
 # target to build an object file
 io.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/io.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/io.c.o
 .PHONY : io.c.o
 
 io.i: io.c.i
@@ -285,7 +285,7 @@ io.i: io.c.i
 
 # target to preprocess a source file
 io.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/io.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/io.c.i
 .PHONY : io.c.i
 
 io.s: io.c.s
@@ -293,7 +293,7 @@ io.s: io.c.s
 
 # target to generate assembly for a file
 io.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/io.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/io.c.s
 .PHONY : io.c.s
 
 ir.o: ir.c.o
@@ -301,7 +301,7 @@ ir.o: ir.c.o
 
 # target to build an object file
 ir.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/ir.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/ir.c.o
 .PHONY : ir.c.o
 
 ir.i: ir.c.i
@@ -309,7 +309,7 @@ ir.i: ir.c.i
 
 # target to preprocess a source file
 ir.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/ir.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/ir.c.i
 .PHONY : ir.c.i
 
 ir.s: ir.c.s
@@ -317,7 +317,7 @@ ir.s: ir.c.s
 
 # target to generate assembly for a file
 ir.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/ir.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/ir.c.s
 .PHONY : ir.c.s
 
 motion_plus.o: motion_plus.c.o
@@ -325,7 +325,7 @@ motion_plus.o: motion_plus.c.o
 
 # target to build an object file
 motion_plus.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/motion_plus.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/motion_plus.c.o
 .PHONY : motion_plus.c.o
 
 motion_plus.i: motion_plus.c.i
@@ -333,7 +333,7 @@ motion_plus.i: motion_plus.c.i
 
 # target to preprocess a source file
 motion_plus.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/motion_plus.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/motion_plus.c.i
 .PHONY : motion_plus.c.i
 
 motion_plus.s: motion_plus.c.s
@@ -341,7 +341,7 @@ motion_plus.s: motion_plus.c.s
 
 # target to generate assembly for a file
 motion_plus.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/motion_plus.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/motion_plus.c.s
 .PHONY : motion_plus.c.s
 
 nunchuk.o: nunchuk.c.o
@@ -349,7 +349,7 @@ nunchuk.o: nunchuk.c.o
 
 # target to build an object file
 nunchuk.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/nunchuk.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/nunchuk.c.o
 .PHONY : nunchuk.c.o
 
 nunchuk.i: nunchuk.c.i
@@ -357,7 +357,7 @@ nunchuk.i: nunchuk.c.i
 
 # target to preprocess a source file
 nunchuk.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/nunchuk.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/nunchuk.c.i
 .PHONY : nunchuk.c.i
 
 nunchuk.s: nunchuk.c.s
@@ -365,7 +365,7 @@ nunchuk.s: nunchuk.c.s
 
 # target to generate assembly for a file
 nunchuk.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/nunchuk.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/nunchuk.c.s
 .PHONY : nunchuk.c.s
 
 os_mac/os_mac.o: os_mac/os_mac.m.o
@@ -373,7 +373,7 @@ os_mac/os_mac.o: os_mac/os_mac.m.o
 
 # target to build an object file
 os_mac/os_mac.m.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac.m.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac.m.o
 .PHONY : os_mac/os_mac.m.o
 
 os_mac/os_mac.i: os_mac/os_mac.m.i
@@ -381,7 +381,7 @@ os_mac/os_mac.i: os_mac/os_mac.m.i
 
 # target to preprocess a source file
 os_mac/os_mac.m.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac.m.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac.m.i
 .PHONY : os_mac/os_mac.m.i
 
 os_mac/os_mac.s: os_mac/os_mac.m.s
@@ -389,7 +389,7 @@ os_mac/os_mac.s: os_mac/os_mac.m.s
 
 # target to generate assembly for a file
 os_mac/os_mac.m.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac.m.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac.m.s
 .PHONY : os_mac/os_mac.m.s
 
 os_mac/os_mac_find.o: os_mac/os_mac_find.m.o
@@ -397,7 +397,7 @@ os_mac/os_mac_find.o: os_mac/os_mac_find.m.o
 
 # target to build an object file
 os_mac/os_mac_find.m.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.o
 .PHONY : os_mac/os_mac_find.m.o
 
 os_mac/os_mac_find.i: os_mac/os_mac_find.m.i
@@ -405,7 +405,7 @@ os_mac/os_mac_find.i: os_mac/os_mac_find.m.i
 
 # target to preprocess a source file
 os_mac/os_mac_find.m.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.i
 .PHONY : os_mac/os_mac_find.m.i
 
 os_mac/os_mac_find.s: os_mac/os_mac_find.m.s
@@ -413,7 +413,7 @@ os_mac/os_mac_find.s: os_mac/os_mac_find.m.s
 
 # target to generate assembly for a file
 os_mac/os_mac_find.m.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_find.m.s
 .PHONY : os_mac/os_mac_find.m.s
 
 os_mac/os_mac_interface.o: os_mac/os_mac_interface.m.o
@@ -421,7 +421,7 @@ os_mac/os_mac_interface.o: os_mac/os_mac_interface.m.o
 
 # target to build an object file
 os_mac/os_mac_interface.m.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.o
 .PHONY : os_mac/os_mac_interface.m.o
 
 os_mac/os_mac_interface.i: os_mac/os_mac_interface.m.i
@@ -429,7 +429,7 @@ os_mac/os_mac_interface.i: os_mac/os_mac_interface.m.i
 
 # target to preprocess a source file
 os_mac/os_mac_interface.m.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.i
 .PHONY : os_mac/os_mac_interface.m.i
 
 os_mac/os_mac_interface.s: os_mac/os_mac_interface.m.s
@@ -437,7 +437,7 @@ os_mac/os_mac_interface.s: os_mac/os_mac_interface.m.s
 
 # target to generate assembly for a file
 os_mac/os_mac_interface.m.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/os_mac/os_mac_interface.m.s
 .PHONY : os_mac/os_mac_interface.m.s
 
 util.o: util.c.o
@@ -445,7 +445,7 @@ util.o: util.c.o
 
 # target to build an object file
 util.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/util.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/util.c.o
 .PHONY : util.c.o
 
 util.i: util.c.i
@@ -453,7 +453,7 @@ util.i: util.c.i
 
 # target to preprocess a source file
 util.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/util.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/util.c.i
 .PHONY : util.c.i
 
 util.s: util.c.s
@@ -461,7 +461,7 @@ util.s: util.c.s
 
 # target to generate assembly for a file
 util.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/util.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/util.c.s
 .PHONY : util.c.s
 
 wiiboard.o: wiiboard.c.o
@@ -469,7 +469,7 @@ wiiboard.o: wiiboard.c.o
 
 # target to build an object file
 wiiboard.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiboard.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiboard.c.o
 .PHONY : wiiboard.c.o
 
 wiiboard.i: wiiboard.c.i
@@ -477,7 +477,7 @@ wiiboard.i: wiiboard.c.i
 
 # target to preprocess a source file
 wiiboard.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiboard.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiboard.c.i
 .PHONY : wiiboard.c.i
 
 wiiboard.s: wiiboard.c.s
@@ -485,7 +485,7 @@ wiiboard.s: wiiboard.c.s
 
 # target to generate assembly for a file
 wiiboard.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiboard.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiboard.c.s
 .PHONY : wiiboard.c.s
 
 wiiuse.o: wiiuse.c.o
@@ -493,7 +493,7 @@ wiiuse.o: wiiuse.c.o
 
 # target to build an object file
 wiiuse.c.o:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiuse.c.o
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiuse.c.o
 .PHONY : wiiuse.c.o
 
 wiiuse.i: wiiuse.c.i
@@ -501,7 +501,7 @@ wiiuse.i: wiiuse.c.i
 
 # target to preprocess a source file
 wiiuse.c.i:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiuse.c.i
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiuse.c.i
 .PHONY : wiiuse.c.i
 
 wiiuse.s: wiiuse.c.s
@@ -509,7 +509,7 @@ wiiuse.s: wiiuse.c.s
 
 # target to generate assembly for a file
 wiiuse.c.s:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiuse.c.s
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(MAKE) -f src/CMakeFiles/wiiuse.dir/build.make src/CMakeFiles/wiiuse.dir/wiiuse.c.s
 .PHONY : wiiuse.c.s
 
 # Help Target
@@ -580,6 +580,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/lab430/Downloads/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/lab430/Documents/HeadTrackingProject/wiiuse-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
